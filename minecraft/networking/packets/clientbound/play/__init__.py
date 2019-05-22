@@ -91,13 +91,9 @@ class JoinGamePacket(Packet):
         {'reduced_debug_info': Boolean},
     ])
 
-    # JoinGamePacket.Difficulty is an alias for Difficulty
+    # These aliases declare the Enum type corresponding to each field:
     Difficulty = Difficulty
-
-    # JoinGamePacket.Gamemode is an alias for Gamemode
     GameMode = GameMode
-
-    # JoinGamePacket.Dimension is an alias for Dimension
     Dimension = Dimension
 
 
@@ -115,7 +111,7 @@ class ServerDifficultyPacket(Packet):
         {'is_locked': Boolean} if context.protocol_version >= 464 else {},
     ])
 
-    # ServerDifficultyPacket.Difficulty is an alias for Difficulty
+    # These aliases declare the Enum type corresponding to each field:
     Difficulty = Difficulty
 
 
@@ -258,13 +254,9 @@ class RespawnPacket(Packet):
         {'level_type': String},
     ])
 
-    # RespawnPacket.Difficulty is an alias for Difficulty.
+    # These aliases declare the Enum type corresponding to each field:
     Difficulty = Difficulty
-
-    # RespawnPacket.Dimension is an alias for Dimension.
     Dimension = Dimension
-
-    # RespawnPacket.Gamemode is an alias for Gamemode.
     GameMode = GameMode
 
 

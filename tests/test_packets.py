@@ -188,6 +188,7 @@ class TestReadWritePackets(unittest.TestCase):
         self.assertEqual(packet.records[0].position, Vector(1, 2, 3))
         self.assertEqual(packet.records[0], packet.records[1])
         self.assertEqual(packet.records[1], packet.records[2])
+        self.assertEqual(packet.chunk_pos, (packet.chunk_x, packet.chunk_z))
         self._test_read_write_packet(packet)
 
     def test_spawn_object_packet(self):
